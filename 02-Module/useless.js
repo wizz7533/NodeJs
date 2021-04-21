@@ -1,4 +1,7 @@
 class Useless {
+
+    // #name
+
     constructor(name) {
         this.name = name;
     }
@@ -7,3 +10,5 @@ class Useless {
         return `Hello ${this.name}`;
     }
 }
+
+module.exports = Useless;
