@@ -44,9 +44,15 @@ console.log(`Fin de l'addition`);
 (async() => {
     console.log(`Début de l'addition`);
     // destructuration : extraction des données
-    const [a, b] = await Promise.all([getNumber(), getNumber()]);
+
+    try {
+        const [a, b] = await Promise.all([getNumber(), getNumber()]);
+        console.log(`${a} + ${b} = ${a+b}`);
+    } catch (e) {
+        console.log(e);
+    }
     // const a = await getNumber();
     // const b = await getNumber();
-    console.log(`${a} + ${b} = ${a+b}`);
+
     console.log(`Fin de l'addition`);
 })();
