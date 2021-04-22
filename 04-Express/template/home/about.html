@@ -1,0 +1,15 @@
+{%extends 'base.html' %}
+
+{% block title %}About :: Formation Node Express{% endblock %}
+
+{% block nav %}
+      <a href="/">Accueil</a>
+      <a href="/about/john">About</a>
+{% endblock %}
+
+{% block body %}
+  <h2>About</h2>
+  <img src="images/star.svg" width="15em" alt="logo star">
+  <p>Hello {{ name }}</p>
+
+{% endblock %}
