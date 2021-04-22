@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Formation POE Front end",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon 04-Express"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/wizz7533/NodeJs/issues"
   },
-  "homepage": "https://github.com/wizz7533/NodeJs#readme"
+  "homepage": "https://github.com/wizz7533/NodeJs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "helmet": "^4.5.0",
+    "mime-types": "^2.1.30",
+    "serve-favicon": "^2.5.0"
+  }
 }
