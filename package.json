@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/wizz7533/NodeJs#readme",
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
   },
   "dependencies": {
     "esm": "^3.2.25",
@@ -26,6 +27,8 @@
     "helmet": "^4.5.0",
     "mime-types": "^2.1.30",
     "nunjucks": "^3.2.3",
-    "serve-favicon": "^2.5.0"
+    "sequelize": "^6.6.2",
+    "serve-favicon": "^2.5.0",
+    "sqlite3": "^5.0.2"
   }
 }

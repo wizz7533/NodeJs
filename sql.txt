@@ -1,0 +1,39 @@
+SQL = Structured Query Language
+
+- Conception
+
+=> site apprentissage et révision :
+  sql.sh
+  https://javarevisited.blogspot.com/2012/11/how-to-join-three-tables-in-sql-query-mysql-sqlserver.html
+
+créer une base de donnees ; CREATE DATABASE nom_bdd
+créer des tables:  CREATE TABLE nom_table (
+    champs_1 type_donnée,
+    champs_2 type_donnée options,
+)
+
+type_donnee ( VARCHAR, TEXT, BLOB, INTEGER, DOUBLE, BOOLEAN, TinyInt(1), DATE, TIME, DATETIME, ENUM, (...))
+option (NULL, NOT NULL, AUTO_INCREMENT, DEFAULT(), INDEX, PRIMARY KEY, UNIQUE, FOREIGN KEY)
+
+- Lecture Ecriture
+
+requête qui vont permettre de manipuler les données:
+
+  - insertion : INSERT INTO table(champs, champs, champs) VALUE ( value, value, value)
+  - modification: UPDATE table SET champs=value, champs=value, champs=value WHERE champs=value
+  - suppession: DELETE FROM table WHERE champs=value
+  - extraction: SELECT champs, champs, champs FROM table WHERE champs>value AND/OR champs<value
+                  ORDER BY champs DESC/ASC LIMIT value, value
+
+                  limit 0, 30
+
+
+ORM : Mapping objet-relationnel.
+
+On va renseigner l'ORM afin qu'il puisse communiquer avec une base de donnée particulière.
+
+A la capacité de se connecter à tout type de base de données : nécessité de lui fournir un connecteur.
+
+Il va pouvoir générer la requête sql adaptée au gestionnaire de base de données.
+
+Permet de faire une abstraction totale de la gestion de la base.
