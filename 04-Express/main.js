@@ -2,8 +2,13 @@ import express from 'express';
 import helmet from 'helmet';
 import path from 'path';
 import favicon from 'serve-favicon';
+import nunjucks from 'nunjucks';
 
 const app = express();
+nunjucks.configure( path.join(__dirname, 'template'), {
+  autoescape: true, // evite les injections xss
+  express: app
+});
 
 // middleware ( use() )
 //helmet va être un intermédiaire dans la

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    //les blocks permettent de rendre une partie du template dynamique, ici valeurs par défaut Welcome Express
+    <title>{% block title %}Welcome Express{% endblock %}</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formation Node<small>Express</small></h1>
+    </header>
+    <nav>
+      <a href="/">Accueil</a>
+    </nav>
+    <main>
+      <% block body %}{% endblock %}
+    </main>
+    <footer>
+      <p>Formation Node - Avril 2021</p>
+    </footer>
+  </body>
+</html>
