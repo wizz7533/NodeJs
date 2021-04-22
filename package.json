@@ -25,6 +25,7 @@
     "express": "^4.17.1",
     "helmet": "^4.5.0",
     "mime-types": "^2.1.30",
+    "nunjucks": "^3.2.3",
     "serve-favicon": "^2.5.0"
   }
 }
