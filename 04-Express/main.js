@@ -21,9 +21,11 @@ app.use( express.static(path.join(__dirname, 'public')));
 app.use( favicon(path.join(__dirname, 'public', 'favicon-32x32.png')));
 
 app.get('/', (req, res) => {
-  let html = `<h1>Accueil</h1>
-  <img src="images/star.svg" width="25em" alt="logo star">`;
-  res.send(html);
+  // let html = `<h1>Accueil</h1>
+  // <img src="images/star.svg" width="25em" alt="logo star">`;
+  // res.send(html);
+
+  res.render('home/index.html');
 })
 
 const port = process.env.PORT || 3200;
