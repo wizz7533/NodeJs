@@ -1,0 +1,29 @@
+Ressource:
+
+En REST, une ressource = URI
+ex:
+http://localhost:4200/users (GET/POST)
+-> GET : liste des utilisateurs
+-> POST : ajoute un utilisateur
+
+http://localhost:4200/users/1 (GET, PUT, PATCH, DELETE)
+-> GET : affiche l'utilisateur 1 (detail)
+-> PUT/PATCH : Modification de l'utilisateur 1
+-> DELETE: Supprime l'utilisateur 1
+
+/***** limites du REST *****/
+http://localhost:4200/users/1/posts/1/comments/1
+http://localhost:4200/users?active=1 (GET)
+
+Verbes HTTP:
+
+- PUT : Remplacer ( modification totale )une ressource
+- POST : Créer uneressource
+- GET : Lire une ressource
+- DELETE : Effacer une ressource
+- PATCH : Modification partielle d'une ressource
+- HEAD : Retourne les headers de la réponse ( iddentique à get mais sans le corps de la réponse)
+- OPTION : Capacités du server en terme d'accès ( accès lecture ou écriture )
+
+- CONNECT : connexion vers un server
+- TRACE : trace du chemin effectué par une requête

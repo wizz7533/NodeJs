@@ -1,0 +1,12 @@
+status code : 5 plages
+
+100 : Information
+
+200: succès
+
+300: Redirection
+
+400: Erreurs Client
+418: I'm a teapot ( reponse à HTCPCP)
+
+500: Erreur Server

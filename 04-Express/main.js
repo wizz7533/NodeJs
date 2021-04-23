@@ -23,6 +23,7 @@ app.use((req, res, next) => {
 });
 app.use( express.static(path.join(__dirname, 'public')));
 app.use( favicon(path.join(__dirname, 'public', 'favicon-32x32.png')));
+app.use( express.json()); // content-type de type application/json
 
 app.use(routes);
 
